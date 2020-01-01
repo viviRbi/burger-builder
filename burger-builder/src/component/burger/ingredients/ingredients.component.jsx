@@ -3,10 +3,9 @@ import "./ingredients.style.css";
 
 const ingredients = (props) => {
   let ingredient = null;
-  ingredient = <div>sdsd</div>
   switch (props.type) {
     case ('bread-bottom'):
-      ingredient = <div>sdsd</div>;
+      ingredient = <div className="BreadBottom"></div>;
       break;
     case ('bread-top'):
       ingredient = (
@@ -31,6 +30,7 @@ const ingredients = (props) => {
     default:
       ingredient = null;
   }
+  return ingredient;
 };
 
 export default ingredients;
